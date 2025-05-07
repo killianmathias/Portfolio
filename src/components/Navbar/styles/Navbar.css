@@ -1,0 +1,33 @@
+.navbar{
+    width: 50%;
+    margin-top: 1%;
+    height: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 10px 0px;
+}
+.navButton{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.navButton:hover{
+    background-color: #ecf0f3;
+    cursor: pointer;
+}
+.nav-icon:hover {
+    color: var(--hover-color);
+}
+
+/* Use a CSS variable to make the hover color dynamic */
+.navButton:hover .nav-icon {
+    color: attr(data-hover-color);
+}
