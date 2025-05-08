@@ -16,22 +16,35 @@
 
 .button{
   background-color: black;
-  width: 80px;
   height: 40px;
   display: flex;
   flex-direction: center;
   align-items: center;
   text-align: center;
   border-radius: 10px;
-  padding : 0px 20px
-
-
+  padding : 0px 20px;
+  transition: 0.5s ease-in-out;
 }
-.button a{
+
+.button:hover{
+  background-color:#ecf0f3 ;
+  
+  transition: 0.5s ease-in-out;
+}
+.button:hover p{
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+.button p{
   color: white;
   font-weight: bold;
   font-size: 15px;
   width: 100%;
   text-decoration: none;
+  transition: 0.5s ease-in-out;
 
+}
+
+.ButtonLink{
+  text-decoration: none;
 }

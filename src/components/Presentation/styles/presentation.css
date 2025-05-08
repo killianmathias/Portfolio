@@ -1,0 +1,100 @@
+.presentation{
+    width: 95%;
+    height: 1000px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 3%;
+}
+.presentationHeader{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ .workname{
+    font-size: 20px;
+}
+
+.work{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+.work_point{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.workname{
+    font-weight:500;
+}
+
+.disponibility{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 25px;
+    margin-top: 15px;
+    margin-right: 40px;
+    background-color: rgba(0, 255, 0, 0.5);
+    border-radius: 25px;
+    padding: 0px 10px;
+}
+
+.dispo_text{
+    font-size: 12px;
+    font-weight: 700;
+    color: green;
+}
+
+.presentationText{
+    width: 50%;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.presentationText h2{
+    font-size: 30px;
+}
+.presentationText>p{
+    color: grey;
+    font-size: 20px;
+}
+Button{
+    text-decoration: none;
+    color: inherit;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 10px solid rgba(243, 241, 231, 0.5);
+    margin-left: 25%;
+    transition: 1s ease-in-out;
+}
+
+.image:hover{
+    scale: 1.1;
+    transition: 0.5s ease-in-out;
+}
+.presentationImage{
+    width: 50%;
+}
+.textButtons{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

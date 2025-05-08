@@ -2,16 +2,17 @@ import './../App.css';
 import Button from '../components/Button'
 import Navbar from '../components/Navbar/Navbar';
 
-function AboutPage() {
+function PortfolioPage() {
   return (
     <div className="App">
       <header className="App-header">
         <Navbar/>
-        <p>Je suis Killian le GOAT, étudiant en informatique à l'université de Besançon</p>
+        <p>Portfolio</p>
+        
       </header>
       
     </div>
   );
 }
 
-export default AboutPage;
+export default PortfolioPage;

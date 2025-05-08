@@ -1,11 +1,13 @@
 import './../App.css';
+import { Link } from 'react-router-dom';
 
-
-function Button() {
+function Button({name, link}) {
   return (
-    <div className="button">
-        <a href='#'>Bouton</a>
-    </div>
+    <Link to={link} className='ButtonLink'>
+      <div className="button">
+          <p>{name}</p>
+      </div>
+    </Link>
   );
 }
 
