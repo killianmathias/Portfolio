@@ -14,7 +14,7 @@ function Navbar() {
       </div>
 
       <div className='contact'>
-        <Button name="Contacte moi" link={"/contact"}/>
+        <Button name="Contacte moi" link={"/contact"} typeOfButton='normal' Icon={MessageCircle}/>
       </div>
     </div>
   );

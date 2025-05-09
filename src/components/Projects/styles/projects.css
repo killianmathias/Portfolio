@@ -1,0 +1,80 @@
+@import "devicon/devicon.min.css";
+
+.project-container{
+    width: 95%;
+    background-color: #ecf0f3;;
+    margin-left: 2.5%;
+    margin-top: 5%;
+    border-radius: 15px;
+    
+}
+.project-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.project-seemore{
+    margin-top: 10px;
+    margin-right: 25px;
+}
+.github-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.project-card{
+    width: 90%;
+    text-align: left;
+    background-color: white;
+    margin-top: 20px;
+    padding: 0px 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.content-right{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.content-left{
+    width: 80%;
+}
+.content-left h1{
+    font-size: 30px;
+    line-height : 45px;
+    margin:0px;
+    color: black;
+}
+.content-left > p{
+    font-size: 15px;
+    margin: 0;
+    color: grey;
+}
+
+.project-langage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.project-langage p {
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 15px;
+    color: black;
+}
+
+.project-card:last-child{
+    margin-bottom: 20px;
+}

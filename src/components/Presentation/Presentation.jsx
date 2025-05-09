@@ -2,6 +2,8 @@ import PresentationHeader from './PresentationHeader';
 import './styles/presentation.css';
 import PresentationText from './PresentationText';
 import PresentationImage from './PresentationImage';
+import Projects from '../Projects/Projects';
+import Socials from '../Socials/Socials';
 
 function Presentation() {
   return (
@@ -10,7 +12,10 @@ function Presentation() {
         <div className='content'>
             <PresentationText/>
             <PresentationImage/>
-         </div>
+            
+        </div>
+        <Projects/>
+        <Socials/>
     </div>
   );
 }

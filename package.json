@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "Killian Mathias",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://killianmathias.github.io/portfolio",
@@ -8,6 +8,7 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "devicon": "^2.16.0",
     "gsap": "^3.13.0",
     "lucide-react": "^0.507.0",
     "react": "^19.1.0",
