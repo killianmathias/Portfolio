@@ -14,8 +14,7 @@ function Presentation() {
             <PresentationImage/>
             
         </div>
-        <Projects/>
-        <Socials/>
+        
     </div>
   );
 }

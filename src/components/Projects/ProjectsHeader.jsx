@@ -8,7 +8,7 @@ function ProjectsHeader() {
     <div className="project-header">
         <PresentationTitle text="Mes projets"/>
         <div className="project-seemore">
-        <Button  typeOfButton='outline' name="Voir plus" link='./portfolio' Icon={Ellipsis}/>
+          <Button  typeOfButton='outline' name="Voir plus" link='./portfolio' Icon={Ellipsis}/>
         </div>
     </div>
   )

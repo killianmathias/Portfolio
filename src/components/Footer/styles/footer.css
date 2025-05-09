@@ -1,0 +1,13 @@
+.footer{
+    background-color: #ecf0f3;
+    width: 95%;
+    margin-left: 2.5%;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+     box-shadow: -5px 5px 10px grey;
+}
+.footer p{
+    font-size: 15px;
+    font-weight:600;
+}

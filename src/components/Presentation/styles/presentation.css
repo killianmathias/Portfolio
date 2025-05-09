@@ -1,9 +1,4 @@
-.presentation{
-    width: 95%;
-    background-color: white;
-    border-radius: 10px;
-    margin-top: 3%;
-}
+
 .presentationHeader{
     width: 100%;
     display: flex;
@@ -30,7 +25,7 @@
     margin-right: 20px;
 }
 .workname{
-    font-weight:500;
+    font-weight:700;
 }
 
 .disponibility{
