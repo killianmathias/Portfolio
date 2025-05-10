@@ -26,3 +26,11 @@
     align-items: center;
     margin-bottom: 20px;
 }
+
+.about-content img{
+    border : 10px solid rgba(236, 240,243,0.5)
+}
+
+.about-more{
+    margin-bottom: 40px;
+}

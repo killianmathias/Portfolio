@@ -1,4 +1,109 @@
 .formulaire{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.formulaire form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ecf0f3;
+    width: 50%;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.loading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ecf0f3;
+    width: 50%;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input[type='text'],
+input[type='email'],
+textarea{
+    width: 60%;
+    background-color: white;
+    border-radius: 15px;
+    border: 0px;
+    font-size: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    resize: vertical;
+}
+
+label{
+    font-size: 18px;
+    margin-bottom: 5px;
+    width: 30px;
+}
+
+.champ{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 15px;
+}
+
+.textarea-container{
+    transition: height 0.2s ease-in-out;
+}
+
+button[type='submit']{
+    width: 30%;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    border: 0px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -1px 1px 10px grey;
+}
+
+button[type='submit']:hover{
+    box-shadow: 0 0 0 5px lightgrey;
+    transition: 0.5s ease-in-out;
+}
+
+.loader{
+    animation: rotating 2s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.title-container{
+    width: 100%;
+    display: flex;
 }
