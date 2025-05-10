@@ -6,7 +6,6 @@
     margin-left: 2.5%;
     margin-top: 5%;
     border-radius: 15px;
-     box-shadow: -5px 5px 10px grey;
     
 }
 .project-header{
@@ -39,7 +38,7 @@
     flex-direction: row;
     justify-content: center;
     text-decoration: none;
-     box-shadow: -5px 5px 10px grey;
+    box-shadow: -1px 1px 10px grey;
 }
 
 .content-right{
@@ -60,6 +59,7 @@
 }
 .content-left > p{
     font-size: 15px;
+    font-weight: 500;
     margin: 0;
     color: grey;
 }
@@ -79,4 +79,16 @@
 
 .project-card:last-child{
     margin-bottom: 20px;
+}
+
+.description-container{
+    width: 50%;
+}
+
+.portfolio-description{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    color: grey;
+    margin-left: 40px;
 }

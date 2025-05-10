@@ -5,8 +5,8 @@ import './styles/projects.css'
 const Projects = () => {
   return (
     <div className="project-container">
-        <ProjectsHeader/>
-        <GitHubProjects/>
+        <ProjectsHeader button={true}/>
+        <GitHubProjects limit={3}/>
     </div>
   )
 }

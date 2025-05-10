@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ProjectCard from './ProjectCard';
 
-const GitHubProjects = () => {
+const GitHubProjects = ({limit}) => {
     const [projects, setProjects] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -14,7 +14,7 @@ const GitHubProjects = () => {
                 // Trier par date de push la plus récente
                 const sorted = data
                     .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at))
-                    .slice(0, 3); // Limiter à 3 éléments
+                    .slice(0, limit); // Limiter à 3 éléments
 
                 setProjects(sorted);
             } catch (error) {

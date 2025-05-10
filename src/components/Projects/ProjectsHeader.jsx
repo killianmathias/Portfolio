@@ -3,13 +3,15 @@ import Button from "../Button"
 import PresentationTitle from "../Presentation/PresentationTitle"
 
 
-function ProjectsHeader() {
+function ProjectsHeader({button}) {
   return (
     <div className="project-header">
         <PresentationTitle text="Mes projets"/>
-        <div className="project-seemore">
-          <Button  typeOfButton='outline' name="Voir plus" link='./portfolio' Icon={Ellipsis}/>
-        </div>
+        {button ?
+          <div className="project-seemore">
+            <Button  typeOfButton='outline' name="Voir plus" link='./portfolio' Icon={Ellipsis}/>
+          </div> : <></>
+        } 
     </div>
   )
 }

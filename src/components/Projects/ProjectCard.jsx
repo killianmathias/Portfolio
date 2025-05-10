@@ -2,7 +2,12 @@ import React from 'react'
 import './styles/projects.css'
 import { ChevronRight } from 'lucide-react';
 function ProjectCard({title, description,language,link}) {
-    const languageMin = language ? language.toLowerCase() : 'default';
+    var languageMin = '';
+    if (language == 'C++'){
+        languageMin = 'cplusplus';
+    }else{
+        languageMin = language ? language.toLowerCase() : 'default';
+    }
     const iconClass = `devicon-${languageMin}-plain colored`;
   return (
     <a href={link} className='project-card'>

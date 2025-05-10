@@ -1,0 +1,28 @@
+.about-image{
+    width: 30%;
+    border-radius: 25px;
+    margin-left:20px;
+    margin-right : 20px;
+}
+.about p{
+    font-size: 20px;
+    font-weight: 500;
+    color: grey;
+    text-align: left;
+    width: 95%;
+    margin-left: 2.5%;
+}
+.about-content>p{
+    width: 55%;
+    margin-left: 0;
+}
+.aboutHeader{
+    display: flex;
+}
+.about-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}

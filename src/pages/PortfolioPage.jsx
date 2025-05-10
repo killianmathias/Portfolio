@@ -1,14 +1,19 @@
 import './../App.css';
 import Button from '../components/Button'
 import Navbar from '../components/Navbar/Navbar';
+import Footer from '../components/Footer/Footer';
+import GitHubProjects from '../components/Projects/GithubProjects';
+import PortfolioProjects from '../components/Projects/PortfolioProjects';
 
 function PortfolioPage() {
   return (
     <div className="App">
       <header className="App-header">
         <Navbar/>
-        <p>Portfolio</p>
-        
+        <div className='portfoliopage-content'>
+          <PortfolioProjects/>
+          <Footer/>
+        </div>
       </header>
       
     </div>
