@@ -1,12 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import './styles/detail.css';
-
+import PresentationTitle from '../Presentation/PresentationTitle';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 function Detail({ projectId }) {
+    const { language } = useLanguage(); // Utiliser le contexte pour obtenir la langue
+    const translations = language === "fr" ? require("../../locales/fr").default : require("../../locales/en").default;
     const [project, setProject] = useState(null);
     const [readme, setReadme] = useState('');
     const [loading, setLoading] = useState(true);
+    
+    const readmeText = translations.readme
+    
 
     useEffect(() => {
         const fetchProject = async () => {
@@ -45,20 +51,25 @@ function Detail({ projectId }) {
         
         if (projectId) fetchProject();
     }, [projectId]);
-
-    if (loading) return <p>Chargement...</p>;
-    if (!project) return <p>Projet introuvable.</p>;
+    if (loading) return <p>{translations.chargement}</p>;
+    if (!project) return <p>{translations.introuvable}</p>;
 
     return (
         <div className='detail'>
-            <h1>{project.name.replace(/-/g, " ")}</h1>
-            <p>{project.description || 'Aucune description disponible.'}</p>
-            <p>Dernière mise à jour : {new Date(project.pushed_at).toLocaleDateString()}</p>
-            <a href={project.html_url} target="_blank" rel="noopener noreferrer">
-                Voir sur GitHub
-            </a>
+            <div className='title-container'>
+                <PresentationTitle text={project.name.replace(/-/g, " ")}/>
+            </div>
+            <div className='detail-content'>
+                <p>{project.description || 'Aucune description disponible.'}</p>
+                <p>{translations.detailUpdate} {new Date(project.pushed_at).toLocaleDateString()}</p>
+                <a href={project.html_url} target="_blank" rel="noopener noreferrer">
+                    {translations.detailSee}
+                </a>
+            </div>
             <hr />
-            <ReactMarkdown>{readme || 'Aucun README disponible.'}</ReactMarkdown>
+            <div className='markdown'>
+                <ReactMarkdown>{readme || {readmeText}}</ReactMarkdown>
+            </div>
         </div>
     );
 }

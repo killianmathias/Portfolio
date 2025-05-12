@@ -1,5 +1,5 @@
 .navbar{
-    width: 40%;
+    width: 45%;
     margin-top: 1%;
     height: 50px;
     background-color: white;
@@ -52,4 +52,7 @@
 /* Use a CSS variable to make the hover color dynamic */
 .navButton:hover .nav-icon {
     color: attr(data-hover-color);
+}
+.navbar-right{
+    margin-right: 20px;
 }

@@ -14,7 +14,7 @@
   color: black;
 }
 
-.homepage-content{
+.page-content{
   width: 95%;
   background-color: white;
   border-radius: 10px;
@@ -23,31 +23,7 @@
   box-shadow: -1px 1px 10px grey;
 }
 
-.detailpage-content{
-  width: 95%;
-  background-color: white;
-  border-radius: 10px;
-  margin-top: 7%;
-  margin-bottom: 20px;
-  box-shadow: -1px 1px 10px grey;
-}
 
-.aboutpage-content{
-  width: 95%;
-  background-color: white;
-  border-radius: 10px;
-  margin-top: 7%;
-  margin-bottom: 20px;
-  box-shadow: -1px 1px 10px grey;
-}
-.portfoliopage-content{
-  width: 95%;
-  background-color: white;
-  border-radius: 10px;
-  margin-top: 7%;
-  margin-bottom: 20px;
-  box-shadow: -1px 1px 10px grey;
-}
 .button{
   background-color: black;
   height: 40px;
@@ -118,3 +94,26 @@
   margin-left: 40px;
   margin-bottom: -20px;
 }
+
+.language-switcher{
+  display: flex;
+  flex-direction: row;
+}
+.language-switcher button{
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  transition: 0.5s ease-in-out;
+}
+.language-switcher button:hover{
+  font-size: 30px;
+  cursor: pointer;
+}
+.selected{
+  background-color: #ecf0f3!important;
+  border-radius: 100%;
+}
+

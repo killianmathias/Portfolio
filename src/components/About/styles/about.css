@@ -13,7 +13,7 @@
     margin-left: 2.5%;
 }
 .about-content>p{
-    width: 55%;
+    width: 90%;
     margin-left: 0;
 }
 .aboutHeader{
@@ -21,10 +21,11 @@
 }
 .about-content{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    margin-bottom: 20px;
+    align-items: flex-start;
+    margin: 20px;
+    width: 60%;
 }
 
 .about-content img{
@@ -33,4 +34,11 @@
 
 .about-more{
     margin-bottom: 40px;
+}
+.about-all{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
 }

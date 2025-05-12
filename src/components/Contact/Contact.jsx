@@ -3,8 +3,10 @@ import emailjs from '@emailjs/browser';
 import './styles/contact.css';
 import { Send, Loader2} from 'lucide-react';
 import PresentationTitle from '../Presentation/PresentationTitle';
-
+import { useLanguage } from '../../contexts/LanguageContext';
 export const Contact = () => {
+  const { language } = useLanguage(); // Utiliser le contexte pour obtenir la langue
+    const translations = language === "fr" ? require("../../locales/fr").default : require("../../locales/en").default;
 
     const [loading, setLoading] = useState(false);
   const form = useRef();
@@ -36,23 +38,23 @@ export const Contact = () => {
   return (
     <div className='formulaire'>
         <div className='title-container'>
-            <PresentationTitle text={'Me contacter'}/>
+            <PresentationTitle text={translations.contactTitle}/>
         </div>
         <form ref={form} onSubmit={sendEmail}>
             <div className='champ'>
-                <label>Nom</label>
+                <label>{translations.contactName}</label>
                 <input type='text' name='user_name' />
             </div>
             <div className='champ'>
-                <label>Email</label>
+                <label>{translations.mail}</label>
                 <input type='email' name='user_email' />
             </div>
             <div className='champ'>
-                <label>Objet</label>
+                <label>{translations.contactObject}</label>
                 <input type='text' name='title' />
             </div>
             <div className='champ textarea-container' style={{ height: textareaHeight }}>
-                <label>Message</label>
+                <label>{translations.contactMessage}</label>
                 <textarea
                   name='message'
                   ref={textareaRef}
@@ -66,7 +68,7 @@ export const Contact = () => {
             </div>
         </div> :
             <button type='submit' className='submit-button'>
-              Envoyer <Send size={20} style={{ marginLeft: '8px' }} />
+              {translations.contactSend}<Send size={20} style={{ marginLeft: '8px' }} />
             </button>}
         </form>
     </div>
