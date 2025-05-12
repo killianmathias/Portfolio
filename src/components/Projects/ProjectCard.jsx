@@ -1,7 +1,10 @@
 import React from 'react'
 import './styles/projects.css'
 import { ChevronRight } from 'lucide-react';
-function ProjectCard({title, description,language,link}) {
+import { Link } from 'react-router-dom';
+import DetailPage from '../../pages/DetailPage';
+
+function ProjectCard({title, description,language, id}) {
     var languageMin = '';
     if (language == 'C++'){
         languageMin = 'cplusplus';
@@ -10,7 +13,7 @@ function ProjectCard({title, description,language,link}) {
     }
     const iconClass = `devicon-${languageMin}-plain colored`;
   return (
-    <a href={link} className='project-card'>
+    <Link to={`/details/${id}`} className='project-card'>
         {/* <div className='project-card'> */}
             <div className='content-left'>
                 <h1>{title}</h1>
@@ -24,7 +27,7 @@ function ProjectCard({title, description,language,link}) {
                 <ChevronRight color='black'/>
             </div>
         {/* </div> */}
-    </a>
+    </Link>
   )
 }
 

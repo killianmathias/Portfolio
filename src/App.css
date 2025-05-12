@@ -23,6 +23,15 @@
   box-shadow: -1px 1px 10px grey;
 }
 
+.detailpage-content{
+  width: 95%;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 7%;
+  margin-bottom: 20px;
+  box-shadow: -1px 1px 10px grey;
+}
+
 .aboutpage-content{
   width: 95%;
   background-color: white;

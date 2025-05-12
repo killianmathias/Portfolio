@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import PortfolioPage from './pages/PortfolioPage';
 import ContactPage from './pages/ContactPage';
+import DetailPage from './pages/DetailPage';
 
 function App() {
     return (
@@ -13,6 +14,8 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/details/:id" element={<DetailPage />} />
+            {/* <Route path="*" element={<NotFoundPage />} /> */}
         </Routes>
     );
 }

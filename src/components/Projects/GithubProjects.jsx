@@ -15,7 +15,6 @@ const GitHubProjects = ({limit}) => {
                 const sorted = data
                     .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at))
                     .slice(0, limit); // Limiter à 3 éléments
-
                 setProjects(sorted);
             } catch (error) {
                 console.error('Erreur lors de la récupération des projets GitHub :', error);
@@ -31,7 +30,7 @@ const GitHubProjects = ({limit}) => {
     return (
         <div className="github-projects">
             {projects.map((project) => (
-                <ProjectCard title={project.name} description={project.description} language={project.language} link={project.html_url}/>
+                <ProjectCard title={project.name.replace(/-/g, " ")} description={project.description} language={project.language} id={project.id}/>
             ))}
         </div>
     );
