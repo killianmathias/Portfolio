@@ -1,0 +1,10 @@
+{
+  "en": {
+    "title": "My Amazing Project",
+    "description": "This is a project that does amazing things."
+  },
+  "fr": {
+    "title": "Mon Projet Incroyable",
+    "description": "Ceci est un projet qui fait des choses incroyables."
+  }
+}
