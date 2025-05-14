@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import PortfolioProjects from '../components/Projects/PortfolioProjects';
 import { useLanguage } from "../contexts/LanguageContext"; 
+import Socials from '../components/Socials/Socials';
 
 function PortfolioPage() {
   const { language } = useLanguage(); // Utiliser le contexte pour obtenir la langue
@@ -13,6 +14,7 @@ function PortfolioPage() {
         <Navbar/>
         <div className='page-content'>
           <PortfolioProjects/>
+          <Socials/>
           <Footer translation={translations}/>
         </div>
       </header>
