@@ -27,9 +27,21 @@
     margin-right: 100px;
 }
 
-.social-btn{
+@media (max-width: 1000px) {
+    .social-btn{
+        width: 20px;
+        height: 20px;
+        padding: 2vw;
+    }
+
+}
+@media (min-width :1000px){
+    .social-btn{
     width: 45px;
     height: 45px;
+    }
+}
+.social-btn{
     display: flex;
     justify-content: center;
     align-items: center;

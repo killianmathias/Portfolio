@@ -17,6 +17,8 @@
     margin-bottom: 20px;
     padding: 20px;
 }
+
+
 .loading{
     display: flex;
     flex-direction: column;
@@ -108,33 +110,18 @@ button[type='submit']:hover{
     display: flex;
 }
 
-.competences{
-    width: 100%;
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 10px;
-}
-.competences h2{
-    font-size: 18px;
-    color: grey;
-}
-.competences ul{
-    margin-top: -10px;
-    height: 400px;
-}
-.competences li{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.sub{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+
+@media (max-width: 1000px) {
+    .formulaire form{
+        width: 80%;
+    }
+    input[type='text'],
+    input[type='email'],
+    textarea{
+        width: 60%;
+    }
+    .champ{
+        width: 90%;
+    }
 }

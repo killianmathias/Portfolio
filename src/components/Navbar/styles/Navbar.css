@@ -1,7 +1,7 @@
 .navbar{
     width: 45%;
     margin-top: 1%;
-    height: 50px;
+    height: 5vh;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -11,10 +11,25 @@
     padding: 10px 0px;
     box-shadow: -1px 1px 10px grey;
     position: fixed;
+    z-index: 10000;
+    
+}
+
+@media (max-width: 1000px) {
+    .navbar {
+        width: 95%;
+        margin-bottom: 6vh;
+        margin-top: 1vh;
+    }
+    .navButtons{
+        margin-left: 2vw;
+    }
 }
 
 .navButtons{
     display: flex;
+    justify-content: space-around;
+    
     width: 50%;
 }
 .contact{
@@ -23,16 +38,16 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-right: 30px;
+    margin-right: 3vw;
 }
 .navButton{
-    width: 40px;
-    height: 40px;
+    width: 4vw;
+    height: 4vw;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    margin-left: 30px;
+    margin-left: 3vw;
 }
 
 .nav-icon{

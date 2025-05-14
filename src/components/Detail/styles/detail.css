@@ -44,3 +44,6 @@
     border: 0;
     border-top: 2px solid #ddd;
 }
+img{
+    max-width: 100%;
+}

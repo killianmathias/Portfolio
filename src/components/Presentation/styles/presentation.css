@@ -5,18 +5,14 @@
     flex-direction: row;
     justify-content: space-between;
 }
- .workname{
-    font-size: 20px;
-}
-
 .work{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 40px;
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: 1vh;
+    margin-left: 2vw;
 }
 
 
@@ -26,6 +22,7 @@
 }
 .workname{
     font-weight:700;
+    font-size : calc(10px + 1vmin)
 }
 
 .disponibility{
@@ -54,11 +51,11 @@
 }
 
 .presentationText h2{
-    font-size: 30px;
+    font-size: calc(20px + 1vmin);
 }
 .presentationText>p{
     color: grey;
-    font-size: 20px;
+    font-size: calc(10px + 1vmin)
 }
 Button{
     text-decoration: none;
@@ -67,15 +64,16 @@ Button{
 .content{
     display: flex;
     flex-direction: row;
+    align-items: center;
     margin-top: 50px;
 }
 
 .image{
-    width: 200px;
-    height: 200px;
+    width: 20vw;
+    height: 20vw;
     border-radius: 100%;
     border: 10px solid rgba(243, 241, 231, 0.5);
-    margin-left: 25%;
+    margin-left: 20%;
     transition: 1s ease-in-out;
 }
 
@@ -92,6 +90,12 @@ Button{
     flex-direction: row;
     justify-content: space-between;
 }
+@media (max-width: 1000px) {
+    .textButtons {
+        display: none;
+    }
+}
+
 .buttonIcon{
     text-decoration: none;
 }

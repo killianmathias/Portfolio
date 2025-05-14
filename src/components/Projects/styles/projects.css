@@ -31,7 +31,7 @@
     width: 90%;
     text-align: left;
     background-color: white;
-    margin-top: 20px;
+    margin-top: 3vh;
     padding: 0px 20px;
     border-radius: 15px;
     display: flex;
@@ -40,6 +40,7 @@
     text-decoration: none;
     box-shadow: -1px 1px 10px grey;
 }
+
 
 .content-right{
     width: 20%;
@@ -52,13 +53,13 @@
     width: 80%;
 }
 .content-left h1{
-    font-size: 30px;
+    font-size: calc(15px + 1vmin);
     line-height : 45px;
     margin:0px;
     color: black;
 }
 .content-left > p{
-    font-size: 15px;
+    font-size: calc(10px + 1vmin);
     font-weight: 500;
     margin: 0;
     color: grey;
@@ -73,7 +74,7 @@
 .project-langage p {
     font-weight: bold;
     margin-left: 10px;
-    font-size: 15px;
+    font-size:calc(10px + 1vmin);
     color: black;
 }
 
@@ -86,9 +87,18 @@
 }
 
 .portfolio-description{
-    font-size: 20px;
+    font-size: calc(10px + 1vmin);
     font-weight: 500;
     text-align: left;
     color: grey;
     margin-left: 40px;
+}
+
+@media (max-width: 1000px) {
+    .project-card {
+        width: 75%;
+    }
+    .description-container{
+        width: 90%;
+    }
 }
