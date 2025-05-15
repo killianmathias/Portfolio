@@ -14,7 +14,7 @@ export default {
   prog : "Programmation",
   other: "Autres",
   aboutFirstText : "Je m'appelle Killian Mathias, étudiant en L2 CMI Informatique à l'Université de Marie et Louis Pasteur de Besançon. Passionné d'informatique, j'adore me plonger dans des projets toujours plus fascinants les uns que les autres.",
-  aboutSecondText : "Ayant grandi à Mâcon, j’ai décroché mon Baccalauréat avec mention très bien et mention Européenne, avec des spécialités en Numérique et Sciences Informatiques et Mathématiques. Passionné d'informatique, j'ai appris énormément en autodidacte et apprends toujours. Je mets à profit ces connaissances pour des projets personnels afin de progresser mais également pour progresser. Ne sachant pas du tout coder d'application mobile, je me lance dans le projet fou de coder une application mobile de réservation de restaurants.",
+  aboutSecondText : "Ayant grandi à Mâcon, j’ai décroché mon Baccalauréat avec mention très bien et mention Européenne, avec des spécialités en Numérique et Sciences Informatiques et Mathématiques. Passionné d'informatique, j'ai appris énormément en autodidacte et apprends toujours. Je mets à profit ces connaissances pour des projets personnels afin de progresser mais également pour le plaisir de créer. Ne sachant pas du tout coder d'application mobile, je me lance dans le projet fou de coder une application mobile de réservation de restaurants.",
   projectTitle: "Mes projets",
   projectSubtitle :"Découvrez mes travaux, mêlant jeux vidéo, sites web et applications mobiles et tous aussi créatifs les uns que les autres.",
     contactTitle : "Me contacter",

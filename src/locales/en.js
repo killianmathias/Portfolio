@@ -14,7 +14,7 @@ export default {
   prog: "Programming",
   other: "Others",
   aboutFirstText: "My name is Killian Mathias, a second-year Computer Science student at the Marie and Louis Pasteur University in Besançon. Passionate about computer science, I love diving into ever more fascinating projects.",
-  aboutSecondText: "Having grown up in Mâcon, I obtained my Baccalaureate with highest honors and a European distinction, with specializations in Digital and Computer Science and Mathematics. Passionate about technology, I have learned a lot on my own and continue to learn. I use this knowledge for personal projects to progress, but also to challenge myself. Not knowing how to code mobile applications at all, I embarked on the crazy project of creating a restaurant reservation app.",
+  aboutSecondText: "Having grown up in Mâcon, I obtained my Baccalaureate with highest honors and a European distinction, with specializations in Digital and Computer Science and Mathematics. Passionate about technology, I have learned a lot on my own and continue to learn. I use this knowledge for personal projects to progress, but also to challenge myself and the pleasure of creating. Not knowing how to code mobile applications at all, I embarked on the crazy project of creating a restaurant reservation app.",
   projectTitle: "My Projects",
   projectSubtitle: "Discover my work, blending video games, websites, and mobile applications, each as creative as the next.",
   contactTitle: "Contact Me",
