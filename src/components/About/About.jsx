@@ -16,7 +16,7 @@ function About() {
               <p>{translations.aboutSecondText}</p>
               
           </div>
-          <img src={source} className='about-image'/>
+          <img src={source} className='about-image' alt='Photo de Killian Mathias'/>
         </div>
         <AboutHeader text={translations.competences}/>
         <div className='competences'>

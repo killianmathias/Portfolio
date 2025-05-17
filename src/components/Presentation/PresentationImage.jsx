@@ -6,7 +6,7 @@ function PresentationImage() {
   return (
     <div className='presentationImage'>
 
-        <img src={source} className='image'/>
+        <img src={source} className='image' alt="Logo Killian Mathias"/>
         
     </div>
   );
