@@ -1,0 +1,4 @@
+Afin de mieux montrer mes projets et me mettre en valeur professionnellement parlant, il était nécessaire pour moi de créer un portfolio.
+Cependant, un portfolio peut être assez pénible à maintenir... Et pour cela j'ai mis en place un système dynamique permettant de récupérer tous mes projets GitHub et de les afficher sur mon portfolio.
+Comme vous pourrez sûrement le constater si vous consultez ce dernier, j'ai de nombreuses compétences en informatique, notamment dans le développement web, et j'ai donc mis en oeuvre celles-ci afin de proposer un portfolio professionnel et dynamique.
+La principale technologie utilisée est ReactJs, qui est u
