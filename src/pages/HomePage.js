@@ -4,6 +4,8 @@ import Navbar from '../components/Navbar/Navbar';
 import Presentation from '../components/Presentation/Presentation';
 import Footer from '../components/Footer/Footer';
 import Projects from '../components/Projects/Projects';
+import OtherProjects from '../components/Projects/OtherProjects';
+import ProjectsHeader from '../components/Projects/ProjectsHeader';
 import Socials from '../components/Socials/Socials';
 import { useLanguage } from "../contexts/LanguageContext"; 
 
@@ -17,6 +19,7 @@ function HomePage() {
         <div className='page-content'>
           <Presentation/>
           <Projects/>
+          <OtherProjects limit={3} button={true}/>
           <Socials/>
           <Footer translation={translations}/>
         </div>

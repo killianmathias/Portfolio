@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import './styles/detail.css';
 import PresentationTitle from '../Presentation/PresentationTitle';
 import { useLanguage } from '../../contexts/LanguageContext';
+import { projects as localProjects } from '../../data/projects';
 
 function Detail({ projectId }) {
     const { language } = useLanguage(); // Utiliser le contexte pour obtenir la langue
@@ -14,6 +15,23 @@ function Detail({ projectId }) {
     useEffect(() => {
         const fetchProject = async () => {
             try {
+                // Check if it's a local project
+                const localProject = localProjects.find(p => p.id === projectId);
+                
+                if (localProject) {
+                   const translation = localProject.translations[language] || localProject.translations['en'];
+                   setProject({
+                       ...localProject,
+                       title: translation.title,
+                       description: translation.description,
+                       html_url: localProject.html_url,
+                       pushed_at: localProject.pushed_at
+                   });
+                   setReadme(localProject.readme[language] || localProject.readme['en']);
+                   setLoading(false);
+                   return;
+                }
+
                 const response = await fetch('https://api.github.com/users/killianmathias/repos');
                 if (!response.ok) throw new Error('Erreur lors de la récupération des données.');
                 const data = await response.json();
@@ -72,10 +90,12 @@ function Detail({ projectId }) {
             </div>
             <div className='detail-content'>
                 <p>{project.description || translations.detailNoDescription}</p>
-                <p>{translations.detailUpdate} {new Date(project.pushed_at).toLocaleDateString()}</p>
-                <a href={project.html_url} target='_blank' rel='noopener noreferrer'>
-                    {translations.detailSee}
-                </a>
+                {project.pushed_at && <p>{translations.detailUpdate} {new Date(project.pushed_at).toLocaleDateString()}</p>}
+                {project.html_url && project.html_url !== '#' && (
+                    <a href={project.html_url} target='_blank' rel='noopener noreferrer'>
+                        {project.html_url.includes('github.com') ? translations.detailSee : translations.detailSeeProject}
+                    </a>
+                )}
             </div>
             <hr />
             <div className='markdown'>
